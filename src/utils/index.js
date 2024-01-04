@@ -371,8 +371,8 @@ export const groupLogsHistoryFD = (data) => {
             chiSo1 = layChiSoNgauNhien(1, inVietNam.length - 2, 0);
             chiSo2 = layChiSoNgauNhien(1, inVietNam.length - 2, chiSo1);
           } else {
-            chiSo1 = 1;
-            chiSo2 = 2;
+            chiSo1 = 0;
+            chiSo2 = inVietNam.length - 1;
           }
 
           doiTuong1 = inVietNam[chiSo1];
@@ -389,8 +389,8 @@ export const groupLogsHistoryFD = (data) => {
             chiSo1 = layChiSoNgauNhien(1, outVietNam.length - 2, 0);
             chiSo2 = layChiSoNgauNhien(1, outVietNam.length - 2, chiSo1);
           } else {
-            chiSo1 = 1;
-            chiSo2 = 2;
+            chiSo1 = 0;
+            chiSo2 = outVietNam.length - 1;
           }
           doiTuong1 = outVietNam[chiSo1];
           doiTuong2 = outVietNam[chiSo2];
@@ -648,8 +648,8 @@ export const groupLogsDHL = (response, status) => {
           chiSo1 = layChiSoNgauNhien(1, inVietNam.length - 2, 0);
           chiSo2 = layChiSoNgauNhien(1, inVietNam.length - 2, chiSo1);
         } else {
-          chiSo1 = 1;
-          chiSo2 = 2;
+          chiSo1 = 0;
+          chiSo2 = inVietNam.length - 1;
         }
         doiTuong1 = result[chiSo1];
         doiTuong2 = result[chiSo2];
@@ -937,8 +937,8 @@ export const groupLogsHistoryUPS = (data) => {
           chiSo1 = layChiSoNgauNhien(1, inVietNam.length - 2, 0);
           chiSo2 = layChiSoNgauNhien(1, inVietNam.length - 2, chiSo1);
         } else {
-          chiSo1 = 1;
-          chiSo2 = 2;
+          chiSo1 = 0;
+          chiSo2 = inVietNam.length - 1;
         }
 
         doiTuong1 = inVietNam[chiSo1];
