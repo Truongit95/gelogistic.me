@@ -360,7 +360,8 @@ export const groupLogsHistoryFD = (data) => {
           chiSo2 = layChiSoNgauNhien(1, outVietNam.length - 1, 0);
 
           doiTuong1 = inVietNam[chiSo1];
-          doiTuong2 = outVietNam[chiSo2];
+          doiTuong2 =
+            outVietNam.length > 1 ? outVietNam[chiSo2] : outVietNam[0];
           doiTuong1.status =
             doiTuong1.countryCode == "VN" ? "Tại Việt Nam" : "Quốc tế";
           doiTuong2.status =
@@ -636,8 +637,8 @@ export const groupLogsDHL = (response, status) => {
         chiSo1 = layChiSoNgauNhien(1, inVietNam?.length - 1, 0);
         chiSo2 = layChiSoNgauNhien(1, outVietNam.length - 1, 0);
 
-        doiTuong1 = result[chiSo1];
-        doiTuong2 = result[chiSo2];
+        doiTuong1 = inVietNam[chiSo1];
+        doiTuong2 = outVietNam.length > 1 ? outVietNam[chiSo2] : outVietNam[0];
         doiTuong1.status =
           doiTuong1.countryCode == "VN" ? "Tại Việt Nam" : "Quốc tế";
         doiTuong2.status =
@@ -926,7 +927,7 @@ export const groupLogsHistoryUPS = (data) => {
         chiSo2 = layChiSoNgauNhien(1, outVietNam.length - 1, 0);
 
         doiTuong1 = inVietNam[chiSo1];
-        doiTuong2 = outVietNam[chiSo2];
+        doiTuong2 = outVietNam.length > 1 ? outVietNam[chiSo2] : outVietNam[0];
         doiTuong1.status =
           doiTuong1.countryCode == "VN" ? "Tại Việt Nam" : "Quốc tế";
         doiTuong2.status =
